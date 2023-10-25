@@ -1,0 +1,230 @@
+$default: #f9f9ff;
+$primary: $theme-color2;
+$success: #4cd3e3;
+$info: #38a4ff;
+$warning: #f4e700;
+$danger: #f44a40;
+$link: #f9f9ff;
+$disable: (#222222, 0.3);
+$primary-color: #7c32ff;
+$primary-color1: #c738d8;
+$title-color: #415094;
+$text-color: #828bb2;
+$white: #fff;
+$offwhite: #f9f9ff;
+$black: #000;
+
+//    Mixins
+@mixin transition($args: all 0.3s ease 0s) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transition-duration($args1, $args2) {
+  -webkit-transition-duration: $args1, $args2;
+  -moz-transition-duration: $args1, $args2;
+  -o-transition-duration: $args1, $args2;
+  transition-duration: $args1, $args2;
+}
+
+@mixin transition-delay($args1, $args2) {
+  -webkit-transition-delay: $args1, $args2;
+  -moz-transition-delay: $args1, $args2;
+  -o-transition-delay: $args1, $args2;
+  transition-delay: $args1, $args2;
+}
+
+@mixin transition-property($args1, $args2) {
+  -webkit-transition-property: $args1, $args2;
+  -moz-transition-property: $args1, $args2;
+  -o-transition-property: $args1, $args2;
+  transition-property: $args1, $args2;
+}
+
+@mixin filter($filter-type, $filter-amount) {
+  -webkit-filter: $filter-type + unquote("(#{$filter-amount})");
+  -moz-filter: $filter-type + unquote("(#{$filter-amount})");
+  -ms-filter: $filter-type + unquote("(#{$filter-amount})");
+  -o-filter: $filter-type + unquote("(#{$filter-amount})");
+  filter: $filter-type + unquote("(#{$filter-amount})");
+}
+
+@mixin gradient($deg, $args1, $args2) {
+  background: -webkit-linear-gradient($deg, $args1, $args2);
+  background: -moz-linear-gradient($deg, $args1, $args2);
+  background: -o-linear-gradient($deg, $args1, $args2);
+  background: -ms-linear-gradient($deg, $args1, $args2);
+  background: linear-gradient($deg, $args1, $args2);
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+@mixin animation($args) {
+  -webkit-animation: $args;
+  -moz-animation: $args;
+  -o-animation: $args;
+  animation: $args;
+}
+.sample-text-area {
+  background: $white;
+  padding: 100px 0 70px 0;
+}
+
+.text-heading {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+b,
+sup,
+sub,
+u,
+del {
+  color: $primary;
+}
+
+.typography {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $text-color;
+  }
+}
+
+.list-style {
+  width: 14px;
+  height: 14px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+.section-top-border {
+  padding: 50px 0;
+  border-top: 1px dotted #eee;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.switch-wrap {
+  margin-bottom: 10px;
+}
+
+/* FORMS { */
+select.form-control:not([size]):not([multiple]) {
+  height: auto;
+}
+
+form {
+  label {
+    text-align: left;
+    margin: 0 0 6px 1px;
+    color: $primary;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    padding: 0;
+  }
+
+  .form-group {
+    input,
+    select {
+      padding: 20px 28px;
+      height: 75px;
+      margin: 24px 0 0 0;
+    }
+
+    textarea {
+      padding: 20px 28px !important;
+      height: 372px !important;
+      margin: 24px 0 0 0;
+    }
+
+    .form-control {
+      display: block;
+      width: 100%;
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 300;
+      color: #464646;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #dbdbdb;
+      border-radius: 18px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.03);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.03);
+      -webkit-transition: border-color ease-in-out 0.15s,
+        -webkit-box-shadow ease-in-out 0.15s;
+      -o-transition: border-color ease-in-out 0.15s,
+        box-shadow ease-in-out 0.15s;
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      appearance: auto;
+
+      &:focus {
+        border-color: $primary;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.035),
+          0 0 8px rgba(217, 217, 217, 0.6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.035),
+          0 0 8px rgba(217, 217, 217, 0.6);
+      }
+    }
+    .text-danger {
+      ul {
+        li {
+          color: #f70;
+          font-size: 17px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+/* Login */
+form .text-danger ul {
+  margin: 0;
+  padding: 0 0 0 17px;
+  text-align: left;
+}
+
+form .form-group label {
+  text-align: right !important;
+}
+
+.text-danger {
+  color: $primary !important;
+  margin-bottom: 0px;
+}
+
+.form-control::placeholder {
+  color: #bec7cf !important;
+}
+
+.form-check-input {
+  position: relative;
+  margin-top: 0;
+  margin-left: initial;
+}
+.no-view {
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+}
+/* } FORMS */

@@ -1,0 +1,132 @@
+/*-------------   Color Variable  --------------*/
+//Colors
+$white: #ffffff;
+$black: #16161a;
+$gray_1: #131217;
+$gray_2: #413e4f;
+$gray_3: #6d6885;
+$gray_4: #444;
+
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$gray-901: #1d2124 !default;
+
+//Theme color
+$primary: #000000 !default;
+$secondary: #00a5ef !default;
+$tertiary: #e40083 !default;
+$quaternary: #fbd302 !default;
+
+$primary-color: #3921e3; // Primary color
+$default-color: #c2c2c2; // Default color
+$success-color: #1cc88a; // Success color
+$info-color: #8950fc; // Info color
+$warning-color: #f4b30d; // Warning color
+$danger-color: #f64e60; // Danger color
+$light-color: #f9fafb;
+$dark-color: #1c1c36;
+$link-color: #6767c2;
+
+//Theme color
+$theme-color: #ff1f1f;
+$theme-color2: #1f2b7b;
+$theme-color3: #f27420;
+$theme-color4: #ff3500;
+
+// btn and Section color
+$btn_bg: #ff1313;
+
+// Heading color
+$heading-color: #1d2434;
+$heading_color2: #080808;
+
+// Body Font
+$body-text-color: #5d6072;
+$hr-border-color: #eceff8;
+
+// Section Bg
+$section_bg1: #454545;
+
+.white-bg {
+    background: #ffffff;
+}
+.gray-bg {
+    background: #f5f5f5;
+}
+
+$gray-color: #bebebe;
+$gray-color-2: #bdbdbd;
+
+// font color
+$font_color1: #10285d;
+$border_color: #fdcb9e;
+
+// bg
+$brand-bg: #f1f4fa;
+$testimonial-bg: #f9fafc;
+
+/*-------------Color include--------------*/
+
+/*-- Background color---*/
+
+.gray-bg {
+    background: $gray_1;
+}
+.white-bg {
+    background: $white;
+}
+.black-bg {
+    background: $black;
+}
+.theme-bg {
+    background: $theme-color;
+}
+.brand-bg {
+    background: $brand-bg;
+}
+.testimonial-bg {
+    background: $testimonial-bg;
+}
+
+/*--- color------*/
+.white-color {
+    color: $white;
+}
+.black-color {
+    color: $black;
+}
+.theme-color {
+    color: $theme-color;
+}
+
+.text-primary {
+    color: $white !important;
+}
+
+$new_primary: #6b39bd;
+$new_primary2: #9875d1;
+$new_secondary: #31c77f;
+$new_grey: #b9b9bd;
+$new_grey2: #aeaeb2;
+$new_darck_grey: #23232f;
+$new_black: #171724;
+$new_blue: #a0abff;
+
+//
+$bg_color_1: #22397c;
+// $bg_color_2: #220f4d;
+// $bg_color_3: #431e7f;
+
+$bg_color_1: #010003;
+$bg_color_2: #120433;
+$bg_color_3: #220070;
+
+$bg_darck: #04151c;
+$bg_light: #f4f4f3;

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objetos>
+  <objeto>
+   <fecha>2023-08-17</fecha>
+   <hora>11:15:40</hora>
+   <url>/proyectos/lagrafica.com/lagrafica/www/framework/index.php</url>
+   <s></s>
+   <g></g>
+   <p></p>
+   <c></c>
+   <detalle><![CDATA[ SELECT * FROM lg_settings_languages where status=1 ]]></detalle>
+  </objeto>
+  <objeto>
+   <fecha>2023-08-17</fecha>
+   <hora>11:15:58</hora>
+   <url>/proyectos/lagrafica.com/lagrafica/www/framework/index.php</url>
+   <s></s>
+   <g></g>
+   <p></p>
+   <c></c>
+   <detalle><![CDATA[SELECT * FROM lg_settings WHERE status='1' or status='3']]></detalle>
+  </objeto>
+  <objeto>
+   <fecha>2023-08-17</fecha>
+   <hora>11:15:58</hora>
+   <url>/proyectos/lagrafica.com/lagrafica/www/framework/index.php</url>
+   <s></s>
+   <g></g>
+   <p></p>
+   <c></c>
+   <detalle><![CDATA[SELECT id_setting, name, logo, url_facebook, google_app, activate_scripts, background_img, status FROM lg_settings  WHERE id_setting>=0  AND status>=0  ORDER BY id_setting DESC  LIMIT 0,10 ]]></detalle>
+  </objeto>
+  <objeto>
+   <fecha>2023-08-17</fecha>
+   <hora>11:15:58</hora>
+   <url>/proyectos/lagrafica.com/lagrafica/www/framework/index.php</url>
+   <s></s>
+   <g></g>
+   <p></p>
+   <c></c>
+   <detalle><![CDATA[SELECT id_setting, name, logo, url_facebook, google_app, activate_scripts, background_img, status FROM lg_settings  WHERE id_setting>=0  AND status>=0  ORDER BY id_setting DESC ]]></detalle>
+  </objeto>
+  <objeto>
+   <fecha>2023-08-17</fecha>
+   <hora>11:15:59</hora>
+   <url>/proyectos/lagrafica.com/lagrafica/www/framework/index.php</url>
+   <s></s>
+   <g></g>
+   <p></p>
+   <c></c>
+   <detalle><![CDATA[SELECT id_setting, name, logo, url_facebook, google_app, activate_scripts, background_img, status FROM lg_settings  WHERE id_setting>=0  AND status>=0  ORDER BY id_setting desc  LIMIT 0,10 ]]></detalle>
+  </objeto>
+  <objeto>
+   <fecha>2023-08-17</fecha>
+   <hora>11:15:59</hora>
+   <url>/proyectos/lagrafica.com/lagrafica/www/framework/index.php</url>
+   <s></s>
+   <g></g>
+   <p></p>
+   <c></c>
+   <detalle><![CDATA[SELECT id_setting, name, logo, url_facebook, google_app, activate_scripts, background_img, status FROM lg_settings  WHERE id_setting>=0  AND status>=0  ORDER BY id_setting desc ]]></detalle>
+  </objeto>
+<!--next-->
+
+
+
+
+
+</objetos>

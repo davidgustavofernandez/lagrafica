@@ -1,0 +1,843 @@
+// button:focus {
+//   outline: 0 !important;
+// }
+
+// .btn-sm {
+//   font-size: 16px !important;
+//   height: 30px !important;
+//   line-height: 32px !important;
+// }
+
+// .btn-xs {
+//   font-size: 14px !important;
+//   height: 28px !important;
+//   line-height: 30px !important;
+// }
+// .btn-xxs {
+//   border-radius: 0.25rem !important;
+//   margin-bottom: 0px !important;
+//   font-size: 18px !important;
+//   height: 22px !important;
+//   line-height: 27px !important;
+//   padding: 0 5px !important;
+//   font-weight: 100 !important;
+// }
+
+// .bt-small {
+//   padding: 3px 15px !important;
+//   height: 23px !important;
+//   line-height: 23px !important;
+//   font-size: 18px !important;
+// }
+
+// .btn-lg {
+//   font-size: 20px !important;
+//   height: 38px !important;
+//   line-height: 40px !important;
+// }
+// .btn-xl {
+//   padding: 1.6rem 3rem !important;
+//   font-size: 32px !important;
+//   line-height: 32px !important;
+//   height: 70px !important;
+// }
+
+// .btn {
+//   font-family: $family_barlow_condensed;
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: 18px;
+//   letter-spacing: -0.35px !important;
+//   height: 35px;
+//   line-height: 38px;
+//   text-align: center;
+//   display: inline-block;
+//   text-decoration: none !important;
+//   border-radius: 18px;
+//   outline: none;
+//   transform: scale3d(1, 1, 1);
+//   position: relative;
+//   overflow: hidden;
+//   -webkit-touch-callout: none;
+//   -webkit-user-select: none;
+//   -khtml-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//   outline: none !important;
+//   padding: 0 22px;
+//   margin-bottom: 10px;
+//   border: none !important;
+//   border-collapse: separate;
+//   cursor: pointer;
+//   text-transform: none !important;
+//   transition: all 0.06s ease-in-out !important;
+//   -o-transition: all 0.06s ease-in-out !important;
+//   -moz-transition: all 0.06s ease-in-out !important;
+//   -webkit-transition: all 0.06s ease-in-out !important;
+// }
+
+// .btn-primary {
+//   color: $white !important;
+//   background-color: $gray_1 !important;
+//   box-shadow: 0 4px 0 0 $gray_1,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -o-box-shadow: 0 4px 0 0 $gray_1,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -moz-box-shadow: 0 4px 0 0 $gray_1,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -webkit-box-shadow: 0 4px 0 0 $gray_1,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+
+//   &:hover {
+//     background-color: $gray_1 !important;
+//     --button-box-side-color: $gray_1;
+//     color: $white !important;
+//     box-shadow: 0 4px 0 0 darken($gray_1, 15%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 darken($gray_1, 15%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 darken($gray_1, 15%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 darken($gray_1, 15%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &:active {
+//     transform: translate3d(0, 4px, 0) !important;
+//     background-color: darken($gray_1, 15%) !important;
+//     --button-box-side-color: darken($gray_1, 15%);
+//     color: $white !important;
+//     box-shadow: 0 0 0 0 darken($gray_1, 15%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 0 0 0 darken($gray_1, 15%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 0 0 0 darken($gray_1, 15%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 0 0 0 darken($gray_1, 15%),
+//       0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &.disabled {
+//     background-color: #e1e1e1;
+//     --button-box-side-color: #e1e1e1;
+//     color: $white !important;
+//     box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18), 0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+// }
+
+// .btn-default {
+//   color: $gray_3 !important;
+//   background-color: $gray-500 !important;
+//   box-shadow: 0 4px 0 0 $gray-500,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -o-box-shadow: 0 4px 0 0 $gray-500,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -moz-box-shadow: 0 4px 0 0 $gray-500,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -webkit-box-shadow: 0 4px 0 0 $gray-500,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+
+//   &:hover {
+//     background-color: $gray-500 !important;
+//     --button-box-side-color: $gray-500;
+//     color: $gray_3 !important;
+//     box-shadow: 0 4px 0 0 darken($gray-500, 15%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 darken($gray-500, 15%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 darken($gray-500, 15%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 darken($gray-500, 15%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &:active {
+//     transform: translate3d(0, 4px, 0) !important;
+//     background-color: darken($gray-500, 15%) !important;
+//     --button-box-side-color: darken($gray-500, 15%);
+//     color: $gray_3 !important;
+//     box-shadow: 0 0 0 0 darken($gray-500, 15%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 0 0 0 darken($gray-500, 15%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 0 0 0 darken($gray-500, 15%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 0 0 0 darken($gray-500, 15%),
+//       0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &.disabled {
+//     background-color: #e1e1e1;
+//     --button-box-side-color: #e1e1e1;
+//     color: $gray_3 !important;
+//     box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18), 0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+// }
+
+// .btn-success {
+//   color: $white !important;
+//   background-color: $success-color !important;
+//   box-shadow: 0 4px 0 0 $success-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -o-box-shadow: 0 4px 0 0 $success-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -moz-box-shadow: 0 4px 0 0 $success-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -webkit-box-shadow: 0 4px 0 0 $success-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+
+//   &:hover {
+//     background-color: $success-color !important;
+//     --button-box-side-color: $success-color;
+//     color: $white !important;
+//     box-shadow: 0 4px 0 0 darken($success-color, 5%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 darken($success-color, 5%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 darken($success-color, 5%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 darken($success-color, 5%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &:active {
+//     transform: translate3d(0, 4px, 0) !important;
+//     background-color: darken($success-color, 5%) !important;
+//     --button-box-side-color: darken($success-color, 5%);
+//     color: $white !important;
+//     box-shadow: 0 0 0 0 darken($success-color, 5%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 0 0 0 darken($success-color, 5%),
+//       0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 0 0 0 darken($success-color, 5%),
+//       0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 0 0 0 darken($success-color, 5%),
+//       0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &.disabled {
+//     background-color: #e1e1e1;
+//     --button-box-side-color: #e1e1e1;
+//     color: $white !important;
+//     box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18), 0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+// }
+
+// .btn-info {
+//   color: $white !important;
+//   background-color: $info-color !important;
+//   box-shadow: 0 4px 0 0 $info-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -o-box-shadow: 0 4px 0 0 $info-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -moz-box-shadow: 0 4px 0 0 $info-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -webkit-box-shadow: 0 4px 0 0 $info-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+
+//   &:hover {
+//     background-color: $info-color !important;
+//     --button-box-side-color: $info-color;
+//     color: $white !important;
+//     box-shadow: 0 4px 0 0 darken($info-color, 7%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 darken($info-color, 7%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 darken($info-color, 7%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 darken($info-color, 7%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &:active {
+//     transform: translate3d(0, 4px, 0) !important;
+//     background-color: darken($info-color, 7%) !important;
+//     --button-box-side-color: darken($info-color, 7%);
+//     color: $white !important;
+//     box-shadow: 0 0 0 0 darken($info-color, 7%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 0 0 0 darken($info-color, 7%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 0 0 0 darken($info-color, 7%),
+//       0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 0 0 0 darken($info-color, 7%),
+//       0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &.disabled {
+//     background-color: #e1e1e1;
+//     --button-box-side-color: #e1e1e1;
+//     color: $white !important;
+//     box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18), 0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+// }
+
+// .btn-warning {
+//   color: $white !important;
+//   background-color: $warning-color !important;
+//   box-shadow: 0 4px 0 0 $warning-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -o-box-shadow: 0 4px 0 0 $warning-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -moz-box-shadow: 0 4px 0 0 $warning-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -webkit-box-shadow: 0 4px 0 0 $warning-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+
+//   &:hover {
+//     background-color: $warning-color !important;
+//     --button-box-side-color: $warning-color;
+//     color: $white !important;
+//     box-shadow: 0 4px 0 0 darken($warning-color, 7%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 darken($warning-color, 7%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 darken($warning-color, 7%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 darken($warning-color, 7%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &:active {
+//     transform: translate3d(0, 4px, 0) !important;
+//     background-color: darken($warning-color, 7%) !important;
+//     --button-box-side-color: darken($warning-color, 7%);
+//     color: $white !important;
+//     box-shadow: 0 0 0 0 darken($warning-color, 7%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 0 0 0 darken($warning-color, 7%),
+//       0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 0 0 0 darken($warning-color, 7%),
+//       0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 0 0 0 darken($warning-color, 7%),
+//       0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &.disabled {
+//     background-color: #e1e1e1;
+//     --button-box-side-color: #e1e1e1;
+//     color: $white !important;
+//     box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18), 0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+// }
+
+// .btn-danger {
+//   color: $white !important;
+//   background-color: $danger-color !important;
+//   box-shadow: 0 4px 0 0 $danger-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -o-box-shadow: 0 4px 0 0 $danger-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -moz-box-shadow: 0 4px 0 0 $danger-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -webkit-box-shadow: 0 4px 0 0 $danger-color,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+
+//   &:hover {
+//     background-color: $danger-color !important;
+//     --button-box-side-color: $danger-color;
+//     color: $white !important;
+//     box-shadow: 0 4px 0 0 darken($danger-color, 30%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 darken($danger-color, 30%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 darken($danger-color, 30%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 darken($danger-color, 30%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &:active {
+//     transform: translate3d(0, 4px, 0) !important;
+//     background-color: darken($danger-color, 30%) !important;
+//     --button-box-side-color: darken($danger-color, 30%);
+//     color: $white !important;
+//     box-shadow: 0 0 0 0 darken($danger-color, 30%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 0 0 0 darken($danger-color, 30%),
+//       0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 0 0 0 darken($danger-color, 30%),
+//       0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 0 0 0 darken($danger-color, 30%),
+//       0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &.disabled {
+//     background-color: #e1e1e1;
+//     --button-box-side-color: #e1e1e1;
+//     color: $white !important;
+//     box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18), 0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+// }
+
+// .btn-link {
+//   color: $gray_3 !important;
+//   background-color: $white !important;
+//   box-shadow: 0 4px 0 0 $white,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -o-box-shadow: 0 4px 0 0 $white,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -moz-box-shadow: 0 4px 0 0 $white,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   -webkit-box-shadow: 0 4px 0 0 $white,
+//     0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+
+//   &:hover {
+//     background-color: $white !important;
+//     --button-box-side-color: $white;
+//     color: $gray_3 !important;
+//     box-shadow: 0 4px 0 0 darken($white, 7%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 darken($white, 7%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 darken($white, 7%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 darken($white, 7%),
+//       0 calc(4px * 2) calc(4px / 2) 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &:active {
+//     transform: translate3d(0, 4px, 0) !important;
+//     background-color: darken($white, 7%) !important;
+//     --button-box-side-color: darken($white, 7%);
+//     color: $gray_3 !important;
+//     box-shadow: 0 0 0 0 darken($white, 7%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 0 0 0 darken($white, 7%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 0 0 0 darken($white, 7%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 0 0 0 darken($white, 7%), 0 0 0 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+//   &.disabled {
+//     background-color: #e1e1e1;
+//     --button-box-side-color: #e1e1e1;
+//     color: $gray_3 !important;
+//     box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18), 0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -o-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -moz-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//     -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.18),
+//       0 8px 2px 0 rgba(0, 0, 0, 0.08) !important;
+//   }
+// }
+
+// .form-control,
+// .form-control:focus,
+// .has-error .form-control:focus,
+// .has-success .form-control:focus,
+// .has-warning .form-control:focus,
+// .navbar-collapse,
+// .navbar-form,
+// .navbar-form-custom .form-control:focus,
+// .navbar-form-custom .form-control:hover,
+// .open .btn.dropdown-toggle,
+// .panel,
+// .popover,
+// .progress,
+// .progress-bar {
+//   box-shadow: none;
+// }
+
+// .btn-outline {
+//   color: inherit;
+//   background-color: transparent;
+//   transition: all 0.5s;
+// }
+
+// .btn-rounded {
+//   border-radius: 50px;
+// }
+
+// .btn-large-dim {
+//   width: 90px;
+//   height: 90px;
+//   font-size: 42px;
+// }
+
+// button.dim {
+//   display: inline-block;
+//   text-decoration: none;
+//   text-transform: uppercase;
+//   text-align: center;
+//   padding-top: 6px;
+//   margin-right: 10px;
+//   position: relative;
+//   cursor: pointer;
+//   border-radius: 5px;
+//   font-weight: 600;
+//   margin-bottom: 20px !important;
+// }
+
+// button.dim:active {
+//   top: 3px;
+// }
+
+// button.btn-primary.dim {
+//   box-shadow: inset 0 0 0 darken($gray_1, 6%), 0 5px 0 0 darken($gray_1, 6%),
+//     0 10px 5px #999 !important;
+// }
+
+// button.btn-primary.dim:active {
+//   box-shadow: inset 0 0 0 darken($gray_1, 6%), 0 2px 0 0 darken($gray_1, 6%),
+//     0 5px 3px #999 !important;
+// }
+
+// button.btn-default.dim {
+//   box-shadow: inset 0 0 0 darken($default-color, 6%),
+//     0 5px 0 0 darken($default-color, 6%), 0 10px 5px #999 !important;
+// }
+
+// button.btn-default.dim:active {
+//   box-shadow: inset 0 0 0 darken($default-color, 6%),
+//     0 2px 0 0 darken($default-color, 6%), 0 5px 3px #999 !important;
+// }
+
+// button.btn-warning.dim {
+//   box-shadow: inset 0 0 0 darken($warning-color, 6%),
+//     0 5px 0 0 darken($warning-color, 6%), 0 10px 5px #999 !important;
+// }
+
+// button.btn-warning.dim:active {
+//   box-shadow: inset 0 0 0 darken($warning-color, 6%),
+//     0 2px 0 0 darken($warning-color, 6%), 0 5px 3px #999 !important;
+// }
+
+// button.btn-info.dim {
+//   box-shadow: inset 0 0 0 darken($info-color, 6%),
+//     0 5px 0 0 darken($info-color, 6%), 0 10px 5px #999 !important;
+// }
+
+// button.btn-info.dim:active {
+//   box-shadow: inset 0 0 0 darken($info-color, 6%),
+//     0 2px 0 0 darken($info-color, 6%), 0 5px 3px #999 !important;
+// }
+
+// button.btn-success.dim {
+//   box-shadow: inset 0 0 0 darken($success-color, 6%),
+//     0 5px 0 0 darken($success-color, 6%), 0 10px 5px #999 !important;
+// }
+
+// button.btn-success.dim:active {
+//   box-shadow: inset 0 0 0 darken($success-color, 6%),
+//     0 2px 0 0 darken($success-color, 6%), 0 5px 3px #999 !important;
+// }
+
+// button.btn-danger.dim {
+//   box-shadow: inset 0 0 0 darken($danger-color, 6%),
+//     0 5px 0 0 darken($danger-color, 6%), 0 10px 5px #999 !important;
+// }
+
+// button.btn-danger.dim:active {
+//   box-shadow: inset 0 0 0 darken($danger-color, 6%),
+//     0 2px 0 0 darken($danger-color, 6%), 0 5px 3px #999 !important;
+// }
+
+// button.dim:before {
+//   font-size: 50px;
+//   line-height: 1em;
+//   font-weight: normal;
+//   color: $white;
+//   display: block;
+//   padding-top: 10px;
+// }
+
+// button.dim:active:before {
+//   top: 7px;
+//   font-size: 50px;
+// }
+
+// .btn:focus {
+//   outline: none !important;
+// }
+
+// .dataTables_wrapper {
+//   .btn {
+//     height: 22px;
+//     line-height: 27px;
+//     padding: 0 10px;
+//   }
+// }
+
+// /* Customize the label (the container) */
+// .checkContainer {
+//   display: block;
+//   position: relative;
+//   padding-left: 35px;
+//   // margin-bottom: 12px;
+//   cursor: pointer;
+//   font-size: 13px;
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//   margin: 6px 0;
+//   /* Hide the browser's default checkbox */
+//   input {
+//     position: absolute;
+//     opacity: 0;
+//     cursor: pointer;
+//     height: 0;
+//     width: 0;
+//     /* When the checkbox is checked, add a blue background */
+//     &:checked ~ .checkmark {
+//       background-color: #2196f3;
+//     }
+//     /* Show the checkmark when checked */
+//     &:checked ~ .checkmark:after {
+//       display: block;
+//     }
+//   }
+//   /* Create a custom checkbox */
+//   .checkmark {
+//     position: absolute;
+//     top: -3px;
+//     left: 0;
+//     height: 25px;
+//     width: 25px;
+//     background-color: $white;
+//     /* Create the checkmark/indicator (hidden when not checked) */
+//     &:after {
+//       content: "";
+//       position: absolute;
+//       display: none;
+//       /* Style the checkmark/indicator */
+//       left: 10px;
+//       top: 7px;
+//       width: 5px;
+//       height: 10px;
+//       border: solid white;
+//       border-width: 0 3px 3px 0;
+//       -webkit-transform: rotate(45deg);
+//       -ms-transform: rotate(45deg);
+//       transform: rotate(45deg);
+//     }
+//   }
+//   /* On mouse-over, add a grey background color */
+//   &:hover input ~ .checkmark {
+//     background-color: #ccc;
+//   }
+// }
+.btn {
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 400;
+    border: none;
+    padding: 0 22px;
+    text-decoration: none;
+    // border-radius: 18px;
+    &.btn-rounded {
+        border-radius: 30px;
+    }
+    &.btn-block {
+        display: block;
+        width: 100%;
+    }
+    // &.btn-lg {
+    //   padding: 1.063rem 3rem;
+    // }
+    // &.btn-md {
+    //   padding: 0.625rem 1.5rem;
+    // }
+    // &.btn-sm {
+    //   padding: 0.2rem 0.4rem;
+    // }
+    // &.btn-contracted {
+    //   padding: 0.625rem;
+    // }
+    &.btn-sm {
+        font-size: 16px;
+        height: 30px;
+        line-height: 32px;
+        padding: 0px 13px;
+    }
+
+    &.btn-xs {
+        font-size: 14px;
+        height: 28px;
+        line-height: 30px;
+    }
+    &.btn-xxs {
+        border-radius: 0.25rem;
+        margin-bottom: 0px;
+        font-size: 18px;
+        height: 22px;
+        line-height: 27px;
+        padding: 0 5px;
+        font-weight: 100;
+    }
+
+    &.bt-small {
+        padding: 3px 15px;
+        height: 23px;
+        line-height: 23px;
+        font-size: 18px;
+    }
+
+    &.btn-lg {
+        padding: 1.063rem 3rem;
+        font-size: 24px;
+        line-height: 40px;
+    }
+    &.btn-xl {
+        padding: 1.6rem 3rem;
+        font-size: 32px;
+        line-height: 32px;
+        height: 70px;
+    }
+}
+.btn-check:focus + .btn,
+.btn:focus {
+    box-shadow: none;
+}
+
+// .btn-xl {
+//     padding: 1.6rem 3rem !important;
+//     font-size: 1.6rem !important;
+// }
+
+// .btn-sm {
+//     padding: 1rem 2rem !important;
+//     font-size: 1rem !important;
+// }
+
+// .btn-st {
+//     padding: 0.4rem 1rem !important;
+//     font-size: 1.2rem !important;
+// }
+
+.btn-primary {
+    background-color: $primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff;
+        background-color: $primary !important;
+        -webkit-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        -moz-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+    }
+}
+
+.btn-secondary {
+    background-color: $secondary;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff;
+        background-color: $secondary !important;
+        -webkit-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        -moz-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+    }
+}
+
+.btn-success {
+    background-color: $success-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff;
+        background-color: $success-color !important;
+        -webkit-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        -moz-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+    }
+}
+
+.btn-danger {
+    background-color: $danger-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff;
+        background-color: $danger-color !important;
+        -webkit-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        -moz-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+    }
+}
+
+.btn-warning {
+    background-color: $warning-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff;
+        background-color: $warning-color !important;
+        -webkit-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        -moz-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+    }
+}
+
+.btn-info {
+    background-color: $info-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff;
+        background-color: $info-color !important;
+        -webkit-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        -moz-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+    }
+}
+
+.btn-light {
+    background-color: $light-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #000;
+        background-color: $light-color !important;
+        -webkit-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        -moz-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+    }
+}
+
+.btn-dark {
+    background-color: $gray-901;
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff;
+        background-color: $gray-901 !important;
+        -webkit-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        -moz-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+    }
+}
+
+.btn-link {
+    background-color: $gray-100;
+    color: #000;
+    &:hover,
+    &:focus,
+    &:active {
+        color: #000;
+        background-color: $gray-100 !important;
+        -webkit-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        -moz-box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+        box-shadow: inset 0px -6px 0px -1px rgba(0, 0, 0, 0.23);
+    }
+}

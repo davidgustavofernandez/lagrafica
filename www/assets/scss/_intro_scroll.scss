@@ -1,0 +1,137 @@
+/* --------------------------------------------------------------------
+ * # scroll icon
+ * -------------------------------------------------------------------- */
+.content-scroll {
+  width: 25px;
+  margin: auto;
+  .intro-scroll {
+    width: 1px;
+    height: 100px;
+    padding: 10px 12px 0 0;
+    border-right: 1px dashed rgba(255, 255, 255, 0.3);
+    text-align: right;
+    right: var(--gutter);
+    margin: -100px 0 0 0;
+
+    .scroll-text {
+      font-weight: 300;
+      font-size: 12px;
+      color: white;
+      margin-top: 14px;
+    }
+    .end-top {
+      background-color: white;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      top: -6px;
+      right: -4px;
+      margin: -56px 0 0 9.5px;
+    }
+    .mouse {
+      height: 38px;
+      width: 25px;
+      border: 3px solid white;
+      border-radius: 12px;
+      text-align: center;
+      right: -13px;
+      top: 14px;
+      -webkit-animation: vertical 3s ease infinite;
+      animation: vertical 3s ease infinite;
+      &:before {
+        content: "";
+        display: block;
+        height: 5px;
+        width: 3px;
+        background-color: white;
+        border-radius: 2px;
+        margin-left: -1.5px;
+        position: absolute;
+        top: 6px;
+        left: 50%;
+      }
+    }
+  }
+}
+
+/* fade in 
+ */
+@-webkit-keyframes vertical {
+  0%,
+  60%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  20% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  40% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+@keyframes vertical {
+  0%,
+  60%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  20% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  40% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+/* --------------------------------------------------------------------
+ * ## intro transitions
+ * -------------------------------------------------------------------- */
+.intro-scroll {
+  transition-timing-function: cubic-bezier(0.28, 0.12, 0.22, 1);
+  transition-duration: 0.6s;
+  transition-delay: 0s;
+  //   opacity: 0;
+}
+
+.intro-scroll {
+  transition-property: opacity, bottom;
+  bottom: -2px;
+}
+
+.show.intro-scroll {
+  opacity: 1;
+}
+
+.show.intro-scroll {
+  transition-delay: 0.9s;
+  bottom: 0;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * intro
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+  .intro-scroll {
+    right: 4.8rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .intro-scroll {
+    right: 4rem;
+  }
+}

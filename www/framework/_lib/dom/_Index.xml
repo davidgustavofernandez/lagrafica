@@ -1,0 +1,47 @@
+<?xml version='1.0' standalone='yes'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:xi="http://www.w3.org/2001/XInclude" >
+<head>
+	<title>Titulo</title>
+</head>
+
+<body>
+<div id='container'>
+
+  <div id='header'>
+    <div id='header_content'>
+      <div id='header_session'>
+        <div id="header_session_username">Username</div>
+		<div id="header_session_session">Pic</div>
+      </div>
+      <div id='header_logo'>
+        <span>Logo</span>
+      </div>
+      <div id='header_secciones'>
+        <p>seccion 1 | seccion 2</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id='main'>
+    <div id='main_content'>
+      <div id='main_content_detalle'>
+        Texto una columna:<br />
+		adsas dasd adssdasd asd<br />
+        as dasda sdasd asdasd sq<br />
+        asda sdasd<br />
+        Asd asdasdasdas d<br />
+        asd asdasd<br />
+      </div>
+    </div>
+  </div>
+  
+  <div id='footer'>
+    <div id='footer_content'>
+      <div id='footer_detalle'>Footer</div>
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>
