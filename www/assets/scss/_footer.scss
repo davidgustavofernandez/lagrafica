@@ -1,0 +1,158 @@
+footer {
+    background-color: $black;
+
+    .container {
+        .row {
+            .logo {
+                padding: 10px 0 0 0;
+                @media #{$md} {
+                    padding: 8px 0 0 0;
+                }
+                @media #{$sm} {
+                    padding: 8px 0 0 0;
+                }
+                @media #{$xs} {
+                    padding: 8px 0 0 0;
+                }
+                img {
+                    width: 95px;
+                }
+            }
+            .social {
+                padding: 0;
+                text-align: center;
+                @media #{$medium_device} {
+                    text-align: right;
+                }
+                @media #{$md} {
+                    text-align: right;
+                }
+                @media #{$sm} {
+                    text-align: right;
+                }
+                @media #{$xs} {
+                    text-align: right;
+                }
+                .social-buttons {
+                    margin-bottom: 0;
+                    display: inline-block;
+                    li {
+                        display: inline-block;
+                        padding: 10px;
+                        padding: 8px 3px 0px 3px;
+                        @media #{$md} {
+                            width: 8px 3px 0px 3px;
+                        }
+                        @media #{$sm} {
+                            width: 8px 3px 0px 3px;
+                        }
+                        @media #{$xs} {
+                            width: 8px 3px 0px 3px;
+                        }
+                        a {
+                            display: block;
+                            background-color: $white;
+                            height: 30px;
+                            width: 30px;
+                            border-radius: 100%;
+                            font-size: 18px;
+                            line-height: 32px;
+                            color: $gray-900;
+                            outline: none;
+                            -webkit-transition: all 0.3s;
+                            -moz-transition: all 0.3s;
+                            transition: all 0.3s;
+                            text-align: center;
+
+                            @media #{$md} {
+                                height: 25px;
+                                width: 25px;
+                                border-radius: 100%;
+                                font-size: 15px;
+                                line-height: 28px;
+                            }
+                            @media #{$sm} {
+                                height: 25px;
+                                width: 25px;
+                                border-radius: 100%;
+                                font-size: 15px;
+                                line-height: 28px;
+                            }
+                            @media #{$xs} {
+                                height: 25px;
+                                width: 25px;
+                                border-radius: 100%;
+                                font-size: 15px;
+                                line-height: 28px;
+                            }
+
+                            &:hover,
+                            &:focus,
+                            &:active {
+                                background-color: $primary;
+                                color: $white;
+                            }
+                            .fa {
+                                .tiktok-image {
+                                    height: 16px;
+                                    width: 16px;
+                                    background-image: url("../img/icon_tiktok_blak.svg");
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    margin: 0 0 -2px 0;
+
+                                    @media #{$md} {
+                                        height: 15px;
+                                        width: 15px;
+                                        margin: 0 0 -1px 0;
+                                    }
+                                    @media #{$sm} {
+                                        height: 15px;
+                                        width: 15px;
+                                        margin: 0 0 -1px 0;
+                                    }
+                                    @media #{$xs} {
+                                        height: 15px;
+                                        width: 15px;
+                                        margin: 0 0 -1px 0;
+                                    }
+
+                                    &:hover {
+                                        background-image: url("../img/icon_tiktok_white.svg");
+                                    }
+                                }
+                            }
+                            .fa-tiktok {
+                                &:before {
+                                    content: "";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .copyright {
+                p {
+                    margin: 10px 0 10px 00;
+                    font-size: 12px;
+                    color: #fff;
+                    @media #{$medium_device} {
+                        text-align: center !important;
+                    }
+                    @media #{$md} {
+                        margin: 0;
+                        text-align: center !important;
+                    }
+                    @media #{$sm} {
+                        margin: 0;
+                        text-align: center !important;
+                    }
+                    @media #{$xs} {
+                        margin: 0;
+                        text-align: center !important;
+                    }
+                }
+            }
+        }
+    }
+}

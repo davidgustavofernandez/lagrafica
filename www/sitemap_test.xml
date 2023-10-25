@@ -1,0 +1,51 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>http://localhost/proyectos/lagrafica.com/lagrafica/www/#index</loc>
+        <lastmod>2023-08-30T20:00:18-03:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>http://localhost/proyectos/lagrafica.com/lagrafica/www/#agencia</loc>
+        <lastmod>2023-08-30T18:20:21-03:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://localhost/proyectos/lagrafica.com/lagrafica/www/servicios/#servicios</loc>
+        <lastmod>2023-08-30T18:32:48-03:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://localhost/proyectos/lagrafica.com/lagrafica/www/servicios/diseno-grafico/</loc>
+        <lastmod>2023-08-30T19:31:17-03:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://localhost/proyectos/lagrafica.com/lagrafica/www/servicios/marketing-digital/</loc>
+        <lastmod>2023-08-30T19:35:31-03:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://localhost/proyectos/lagrafica.com/lagrafica/www/servicios/diseno-web/</loc>
+        <lastmod>2023-08-30T19:35:53-03:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://localhost/proyectos/lagrafica.com/lagrafica/www/servicios/publicidad-creativa/</loc>
+        <lastmod>2023-08-30T19:36:07-03:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://localhost/proyectos/lagrafica.com/lagrafica/www/#trabajos</loc>
+        <lastmod>2023-08-16T00:52:35-03:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://localhost/proyectos/lagrafica.com/lagrafica/www/#contacto</loc>
+        <lastmod>2023-08-16T00:49:37-03:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+</urlset>

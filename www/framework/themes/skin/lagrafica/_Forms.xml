@@ -1,0 +1,138 @@
+<?xml version='1.0' standalone='yes'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en" LANG="en">
+    <head>
+        <meta CHARSET="utf-8" />
+        <title>Agencia La Gráfica</title>
+    </head>
+    <body CLASS="tpl_internas"><!-- _Internas -->
+        <div id="wrapper">
+            <!-- Navigation { -->
+            <nav ROLE="navigation" CLASS="navbar-default navbar-static-side">
+                <div CLASS="sidebar-collapse">
+                    <ul id="side-menu" CLASS="nav metismenu">
+                        <li CLASS="nav-header">
+                            <div CLASS="dropdown profile-element">
+                                <span>
+                                    <img SRC="themes/skin/lagrafica/images/logo.png" CLASS="img-circle" ALT="image" />
+                                </span>
+                            </div>
+                            <div CLASS="logo-element">
+                                <img SRC="themes/skin/lagrafica/images/logo_min.png" CLASS="img-circle" ALT="image" />
+                            </div>
+                        </li>
+                        <li>
+                            <a HREF="index.php">
+                                <i CLASS="fa fa-th-large"></i>
+                                <span CLASS="nav-label">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a HREF="#">
+                                <i CLASS="fa fa-diamond"></i>
+                                <span CLASS="nav-label">Administrables</span>
+                                <span CLASS="fa arrow"></span>
+                            </a>
+                            <ul CLASS="nav nav-second-level collapse">
+                                <li><a HREF="#">seccion</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- } Navigation -->
+            <!-- Page Content { -->
+            <div id="page-wrapper" CLASS="gray-bg dashbard-1">
+                <!-- header { -->
+                <div CLASS="row border-bottom">
+                    <nav CLASS="navbar navbar-static-top" STYLE="margin-bottom: 0" ROLE="navigation">
+                        <div CLASS="navbar-header">
+                            <!-- <a CLASS="navbar-minimalize minimalize-styl-2 btn btn-primary " HREF="#">
+                                <i CLASS="fa fa-bars"></i>
+                            </a> -->
+                            <a CLASS="btn btn-primary minimalize-styled" HREF="../index.php" target="_blank">
+                                <i CLASS="fa fa-globe"></i> Site
+                            </a>
+                            <a CLASS="btn btn-primary minimalize-styled" HREF="../index.php" target="_blank">
+                                <i CLASS="fa fa-globe"></i> API
+                            </a>
+                        </div>
+                        <ul CLASS="nav navbar-top-links navbar-right">
+                            <li>
+                                <span CLASS="m-r-sm text-muted welcome-message">David Gustavo Fernandez</span>
+                            </li>
+                            <!-- dropdown-user { -->
+                            <li CLASS="dropdown">
+                                <a CLASS="dropdown-toggle user-data" data-toggle="dropdown" HREF="#">
+                                    <img SRC="themes/skin/lagrafica/images/usuario.jpg" CLASS="img-circle" ALT="image" WIDTH="40" />
+                                </a>
+                                <ul CLASS="dropdown-menu dropdown-user">
+                                    <li>
+                                        <a HREF="#">
+                                            <i CLASS="fa fa-gear fa-fw"></i> Configuración
+                                        </a>
+                                    </li>
+                                    <li CLASS="divider"></li>
+                                    <li>
+                                        <a HREF="login.html">
+                                            <i CLASS="fa fa-sign-out fa-fw"></i> Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- } dropdown-user -->
+                        </ul>
+                    </nav>
+                </div>
+                <!-- } header -->
+                <!-- main { -->
+                <!-- top { -->
+                <div CLASS="row wrapper border-bottom white-bg page-heading">
+                    <div CLASS="col-sm-6">
+                        <h2>Welcome David</h2>
+                        <ol CLASS="breadcrumb">
+                            <li>
+                                <a HREF="index.php">Esto es</a>
+                            </li>
+                            <li CLASS="active">
+                                <strong>Dashboard</strong>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- } top -->
+                <!-- content { -->
+                <div CLASS="wrapper wrapper-content animated fadeInRight">
+                    <div CLASS="row">
+                        <div CLASS="col-lg-12">
+                            <div CLASS="ibox float-e-margins">
+                                <div CLASS="ibox-content">
+                                    <h2>Titulo</h2>
+                                    <div CLASS="ibox-content">
+                                        <p>Detalle</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- } content -->
+                <!-- } main -->
+                <!-- footer { -->
+                <div CLASS="row" STYLE="position: fixed; bottom: 0px; width: 100%;">
+                    <div CLASS="col-lg-12">
+                        <div CLASS="footer">
+                            <footer>
+                                <strong>Copyright</strong> Example Company © 2017
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <!-- } footer -->
+            </div>
+            <!-- } Page Content -->
+	</div>
+        <!-- wrapper -->
+       
+    </body>
+</html>

@@ -1,0 +1,12 @@
+# BEGIN FRAMEWORK
+<IfModule mod_rewrite.c>
+# Activar RewriteEngine
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /proyectos/apsiadis/www/framework/_lib/ztester/urlfriendly/
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^login/$ login.php [NC,L]
+RewriteRule ^login/([A-Za-z0-9-_.]+)/?$ login.php?msn=$1 [NC,L]
+</IfModule>
+# END FRAMEWORK
